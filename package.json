@@ -1,0 +1,23 @@
+{
+  "name": "CDOJDesign",
+  "version": "3.0.0",
+  "description": "CDOJ UI Design",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "UI",
+    "Design",
+    "Material",
+    "Design"
+  ],
+  "author": "mzry1992",
+  "license": "GPL",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-less": "*",
+    "bower": "*"
+  }
+}
