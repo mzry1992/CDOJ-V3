@@ -24,6 +24,7 @@ core-menu#menu paper-item {
   min-height: 100%;
   width: 100%;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 .legal {
   box-sizing: border-box;
