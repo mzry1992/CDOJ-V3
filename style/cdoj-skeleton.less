@@ -4,8 +4,12 @@
 paper-item.core-selected {
   color: @accent;
 }
-core-icon {
-  color: @secondary-text;
+// FIXME: trick under chrome
+@deep: ~'/deep/';
+core-drawer-panel @{deep} {
+  core-icon {
+    color: @secondary-text;
+  }
 }
 core-toolbar {
   color: #FFF;

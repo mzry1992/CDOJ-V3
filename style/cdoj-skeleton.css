@@ -1,7 +1,7 @@
 paper-item.core-selected {
   color: #ff4081;
 }
-core-icon {
+core-drawer-panel /deep/ core-icon {
   color: rgba(0, 0, 0, 0.54);
 }
 core-toolbar {
@@ -19,12 +19,12 @@ core-menu#menu paper-item {
   padding-left: 28px;
 }
 .menu-wrapper {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
   position: absolute;
   padding-bottom: 96px;
   min-height: 100%;
   width: 100%;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
 }
 .legal {
   box-sizing: border-box;
