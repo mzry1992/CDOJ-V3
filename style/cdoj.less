@@ -5,3 +5,13 @@ body {
   font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
   color: @text;
 }
+
+@deep: ~"/deep/";
+a {
+  color: @accent;
+  text-decoration: none;
+}
+html @{deep} a {
+  color: @accent;
+  text-decoration: none;
+}

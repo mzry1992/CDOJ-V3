@@ -2,3 +2,11 @@ body {
   font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
   color: rgba(0, 0, 0, 0.87);
 }
+a {
+  color: #ff4081;
+  text-decoration: none;
+}
+html /deep/ a {
+  color: #ff4081;
+  text-decoration: none;
+}
