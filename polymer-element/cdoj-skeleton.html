@@ -10,20 +10,24 @@
 <polymer-element name="cdoj-skeleton">
   <template>
     <core-drawer-panel id="drawerPanel" drawerWidth="192px" narrow="{{narrow}}" responsiveWidth="900px">
-      <core-header-panel drawer>
+      <core-header-panel drawer shadow>
         <core-toolbar class="{{ {'medium-tall' : !narrow} | tokenList }}">
           <div class="bottom main-label fit">CDOJ</div>
         </core-toolbar>
-        <core-menu id="menu" selected="0">
-          <paper-item icon="home" label="Home"></paper-item>
-          <paper-item icon="extension" label="Problem"></paper-item>
-          <paper-item icon="event" label="Contest"></paper-item>
-          <paper-item icon="cached" label="Status"></paper-item>
-          <paper-item icon="account-child" label="User"></paper-item>
-          <paper-item icon="trending-up" label="Training"></paper-item>
-          <paper-item icon="group-work" label="BBS"></paper-item>
-        </core-menu>
-
+        <div class="menu-wrapper">
+          <core-menu id="menu" selected="0">
+            <paper-item icon="home" label="Home"></paper-item>
+            <paper-item icon="extension" label="Problem"></paper-item>
+            <paper-item icon="event" label="Contest"></paper-item>
+            <paper-item icon="cached" label="Status"></paper-item>
+            <paper-item icon="account-child" label="User"></paper-item>
+            <paper-item icon="trending-up" label="Training"></paper-item>
+            <paper-item icon="group-work" label="BBS"></paper-item>
+          </core-menu>
+          <div class="legal">
+            <p>UESTC Online Judge</p>
+          </div>
+        </div>
       </core-header-panel>
 
       <core-header-panel main mode="{{narrow ? 'waterfall' : 'cover'}}" shadow>
@@ -32,9 +36,9 @@
             <paper-icon-button class="menuButton fallback" icon="menu"></paper-icon-button>
           </content>
         </core-toolbar>
-        <!--div class="card">
-
-        </div-->
+        <div class="card">
+          <paper-shadow z="2"></paper-shadow>
+        </div>
       </core-header-panel>
     </core-drawer-panel>
   </template>

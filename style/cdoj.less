@@ -16,7 +16,6 @@ html @{deep} {
     color: @secondary-text;
   }
   core-toolbar {
-    background-color: @primary;
     color: #FFF;
   }
   .main-label {
@@ -30,13 +29,36 @@ html @{deep} {
       padding-left: 60 - 24 - 8px;
     }
   }
+  .menu-wrapper {
+    position: absolute;
+    padding-bottom: 96px;
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .legal {
+    box-sizing:border-box;
+    border-top: 1px solid #e0e0e0;
+    bottom: 0;
+    font-size: 13px;
+    height: 96px;
+    line-height: 24px;
+    padding: 24px;
+    position: absolute;
+    width: 100%;
+  }
   #drawerPanel {
     [main] {
       background-color: #EEE;
+      core-toolbar {
+        background-color: @primary500;
+      }
     }
     [drawer] {
-      background-color: #EEE;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      background-color: #FFF;
+      core-toolbar {
+        background-color: @primary700;
+      }
     }
   }
   #drawerPanel:not([narrow]) ::content .menuButton {
@@ -45,14 +67,12 @@ html @{deep} {
   paper-icon-button.menuButton @{deep} core-icon {
     fill: #FFF;
   }
-  /*
   .card {
     display: block;
-    margin: 64px 120px 60px 5px;
+    margin: 64px 120px 60px 16px;
     background-color: #FFF;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     border-radius: 2px;
     overflow: hidden;
     min-height: 500px;
-  }*/
+  }
 }
