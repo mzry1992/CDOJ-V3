@@ -5,7 +5,7 @@
 <link rel="import" href="../bower_components/paper-item/paper-item.html">
 <link rel="import" href="../bower_components/core-icons/core-icons.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
-<link rel="import" href="../bower_components/paper-shadow/paper-shadow.html">
+<link rel="import" href="cdoj-card.html">
 
 <polymer-element name="cdoj-skeleton">
   <template>
@@ -27,6 +27,7 @@
           </core-menu>
           <div class="legal">
             <p>UESTC Online Judge</p>
+
           </div>
         </div>
       </core-header-panel>
@@ -37,9 +38,20 @@
             <paper-icon-button class="menuButton fallback" icon="menu"></paper-icon-button>
           </content>
         </core-toolbar>
-        <div class="card">
-          <paper-shadow z="2"></paper-shadow>
-        </div>
+        <cdoj-card z="2">Fuck</cdoj-card>
+        <cdoj-card z="2">
+          <p class="muted">
+            © 2014
+            Ruins He(<a href="https://github.com/lyhypacm">@lyhypacm</a>),
+            Jianjin Fan(<a href="https://github.com/pfctgeorge">@pfctgeorge</a>) and
+            Yun Li(<a href="https://github.com/mzry1992">@mzry1992</a>).
+            <a href="http://uestc-acm.github.io/CDOJ/">Project home</a>
+          </p>
+          <p class="muted">
+            Any Problem, Please Report On <a href="https://github.com/UESTC-ACM/CDOJ/issues">Issues Page</a>
+            Or Discuss With Us In <a href="mailto:cdoj-users@googlegroups.com">Mailing List</a>.
+          </p>
+        </cdoj-card>
       </core-header-panel>
     </core-drawer-panel>
   </template>

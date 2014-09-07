@@ -1,0 +1,19 @@
+<link rel="import" href="../bower_components/paper-shadow/paper-shadow.html">
+
+<polymer-element name="cdoj-card" attributes="z">
+  <template>
+    <link rel="stylesheet" href="../style/cdoj-card.css">
+    <div id="card">
+      <paper-shadow z="{{z}}">
+        <content></content>
+      </paper-shadow>
+    </div>
+  </template>
+  <script>
+    Polymer('cdoj-card', {
+      publish: {
+        z: {value: 1, reflect: true}
+      }
+    });
+  </script>
+</polymer-element>

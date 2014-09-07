@@ -22,7 +22,7 @@ core-menu#menu paper-item {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   position: absolute;
-  padding-bottom: 96px;
+  padding-bottom: 48px;
   min-height: 100%;
   width: 100%;
 }
@@ -32,11 +32,20 @@ core-menu#menu paper-item {
   border-top: 1px solid #e0e0e0;
   bottom: 0;
   font-size: 13px;
-  height: 96px;
+  height: 48px;
   line-height: 24px;
-  padding: 24px;
+  padding: 12px 0;
   position: absolute;
   width: 100%;
+  color: rgba(0, 0, 0, 0.54);
+  text-align: center;
+}
+.legal p {
+  margin: 0;
+}
+.muted {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.54);
 }
 #drawerPanel [main] {
   background-color: #EEE;
@@ -55,12 +64,4 @@ core-menu#menu paper-item {
 }
 paper-icon-button.menuButton core-icon {
   fill: #FFF;
-}
-.card {
-  display: block;
-  margin: 64px 120px 60px 16px;
-  background-color: #FFF;
-  border-radius: 2px;
-  overflow: hidden;
-  min-height: 500px;
 }
