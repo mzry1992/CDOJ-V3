@@ -1,0 +1,48 @@
+<link rel="import" href="../bower_components/core-drawer-panel/core-drawer-panel.html">
+<link rel="import" href="../bower_components/core-header-panel/core-header-panel.html">
+<link rel="import" href="../bower_components/core-menu/core-menu.html">
+<link rel="import" href="../bower_components/core-toolbar/core-toolbar.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../bower_components/core-icons/core-icons.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/paper-shadow/paper-shadow.html">
+
+<polymer-element name="cdoj-skeleton">
+  <template>
+    <core-drawer-panel id="drawerPanel" drawerWidth="192px" narrow="{{narrow}}" responsiveWidth="900px">
+      <core-header-panel drawer>
+        <core-toolbar class="{{ {'medium-tall' : !narrow} | tokenList }}">
+          <div class="bottom main-label fit">CDOJ</div>
+        </core-toolbar>
+        <core-menu id="menu" selected="0">
+          <paper-item icon="home" label="Home"></paper-item>
+          <paper-item icon="extension" label="Problem"></paper-item>
+          <paper-item icon="event" label="Contest"></paper-item>
+          <paper-item icon="cached" label="Status"></paper-item>
+          <paper-item icon="account-child" label="User"></paper-item>
+          <paper-item icon="trending-up" label="Training"></paper-item>
+          <paper-item icon="group-work" label="BBS"></paper-item>
+        </core-menu>
+
+      </core-header-panel>
+
+      <core-header-panel main mode="{{narrow ? 'waterfall' : 'cover'}}" shadow>
+        <core-toolbar class="{{ {'medium-tall' : !narrow} | tokenList }}">
+          <content select=".menuButton" on-tap="{{togglePanel}}">
+            <paper-icon-button class="menuButton fallback" icon="menu"></paper-icon-button>
+          </content>
+        </core-toolbar>
+        <!--div class="card">
+
+        </div-->
+      </core-header-panel>
+    </core-drawer-panel>
+  </template>
+  <script>
+    Polymer('cdoj-skeleton', {
+      togglePanel: function () {
+        this.$.drawerPanel.togglePanel();
+      }
+    });
+  </script>
+</polymer-element>
