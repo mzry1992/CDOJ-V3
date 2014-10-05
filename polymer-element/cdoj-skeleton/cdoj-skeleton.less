@@ -24,6 +24,10 @@ core-menu#menu {
   paper-item {
     padding-left: 60 - 24 - 8px;
   }
+  paper-ripple,
+  ::shadow paper-ripple {
+    color: #D1D1D1;
+  }
 }
 @legal-height: 48px;
 .menu-wrapper {
@@ -72,6 +76,6 @@ core-menu#menu {
 #drawerPanel:not([narrow]) ::content .menuButton {
   display: none;
 }
-paper-icon-button.menuButton core-icon {
+paper-icon-button.menuButton::shadow core-icon {
   fill: #FFF;
 }

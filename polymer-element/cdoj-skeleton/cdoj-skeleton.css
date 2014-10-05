@@ -18,6 +18,10 @@ core-menu#menu {
 core-menu#menu paper-item {
   padding-left: 28px;
 }
+core-menu#menu paper-ripple,
+core-menu#menu ::shadow paper-ripple {
+  color: #D1D1D1;
+}
 .menu-wrapper {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -62,6 +66,6 @@ core-menu#menu paper-item {
 #drawerPanel:not([narrow]) ::content .menuButton {
   display: none;
 }
-paper-icon-button.menuButton core-icon {
+paper-icon-button.menuButton::shadow core-icon {
   fill: #FFF;
 }

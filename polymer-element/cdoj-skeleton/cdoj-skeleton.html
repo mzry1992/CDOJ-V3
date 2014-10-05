@@ -4,7 +4,9 @@
 <link rel="import" href="../../bower_components/core-toolbar/core-toolbar.html">
 <link rel="import" href="../../bower_components/paper-item/paper-item.html">
 <link rel="import" href="../../bower_components/core-icons/core-icons.html">
+<link rel="import" href="../../bower_components/core-icons/social-icons.html">
 <link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../cdoj-card/cdoj-card.html">
 
 <polymer-element name="cdoj-skeleton">
@@ -27,7 +29,6 @@
           </core-menu>
           <div class="legal">
             <p>UESTC Online Judge</p>
-
           </div>
         </div>
       </core-header-panel>
@@ -40,15 +41,17 @@
         </core-toolbar>
         <cdoj-card z="2">Fuck</cdoj-card>
         <cdoj-card z="2">
+          <div class="links">
+            <a href="http://uestc-acm.github.io/CDOJ/"><paper-button icon="social:post-github" label="Project home"></paper-button></a>
+            <a href="https://github.com/UESTC-ACM/CDOJ/issues/new"><paper-button icon="bug-report" label="File a bug"></paper-button></a>
+          </div>
           <p class="muted">
             © 2014
             Ruins He(<a href="https://github.com/lyhypacm">@lyhypacm</a>),
             Jianjin Fan(<a href="https://github.com/pfctgeorge">@pfctgeorge</a>) and
             Yun Li(<a href="https://github.com/mzry1992">@mzry1992</a>).
-            <a href="http://uestc-acm.github.io/CDOJ/">Project home</a>
           </p>
           <p class="muted">
-            Any Problem, Please Report On <a href="https://github.com/UESTC-ACM/CDOJ/issues">Issues Page</a>
             Or Discuss With Us In <a href="mailto:cdoj-users@googlegroups.com">Mailing List</a>.
           </p>
         </cdoj-card>
